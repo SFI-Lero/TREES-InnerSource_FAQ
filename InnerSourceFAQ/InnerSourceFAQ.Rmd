@@ -1,0 +1,50 @@
+---
+title: "InnerSource FAQ"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+library(shiny.i18n)
+i18n <- Translator$new(translation_csvs_path = "./data")
+i18n$set_translation_language("en")
+
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## `r i18n$t("The Basics")`
+
+### `r i18n$t("What is InnerSource?")`
+
+*`r i18n$t("InnerSource is the use of best practices from successful open source projects and establishment of an open source culture within your organization. You still develop proprietary software, while opening up work between developers and teams internally.")`*
+
+### `r i18n$t("Why InnerSource matters?")`
+
+*`r i18n$t("With the increasing pace of technological change, internal communication and collaboration have become key competitive differentiators, as they are both essential to agility and ensuring long-term competitive advantage.")`*
+
+*`r i18n$t("Adopting InnerSource within a organization enables reuse of existing solutions and minimizes redundancy, empowers and incentivizes collaboration across teams, and makes it possible to leverage the talent across the entire workforce.")`*
+
+### `r i18n$t("Benefits of InnerSource")`
+
+`r i18n$t("Many benefits that are typical of open source development can be realized with InnerSource.")`
+
+* **`r i18n$t("Faster, with quality:")`** *`r i18n$t("Unit tests, code coverage, and continuous integration help improve code earlier")`*
+* **`r i18n$t("Documentation:")`** *`r i18n$t("Code is better documented, both in comments and less formally in discussions")`*
+* **`r i18n$t("Code reuse:")`** *`r i18n$t("Code and architecture are discoverable and available across teams and the organization")`*
+* **`r i18n$t("Collaboration:")`** *`r i18n$t("Friction reduced for code review, communication, and contributions in and between teams")`*
+* **`r i18n$t("Culture:")`** *`r i18n$t("Silos broken down, happiness improved and with that, better retainment and recruitment")`*
+
+```{r basic, echo=FALSE}
+question(i18n$t("Which of the following options is NOT TRUE about InnerSource?"),
+  answer(i18n$t("InnerSource refers to the adoption of open source best practices within an organization")),
+  answer(i18n$t("InnerSource requires adopting the open source culture in terms of sharing code and collaborating with your colleagues potentially outside your depratment")),
+  answer(i18n$t("Making your source code visible within the organization is enough for InnerSource"), correct = TRUE),
+  answer(i18n$t("InnerSource can lead to sustainable collaboration and is beneficial in ensuring the long-term success of the organization")),
+  random_answer_order = TRUE,
+  allow_retry = TRUE
+)
+```
+
+
+
