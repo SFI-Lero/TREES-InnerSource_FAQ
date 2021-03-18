@@ -1,3 +1,24 @@
 en,中文
 Change language, 选择语言
 What is InnerSource?,什么是内源？
+"InnerSource is the use of best practices from successful open source projects and establishment of an open source culture within your organization. You still develop proprietary software, while opening up work between developers and teams internally.","内源通过在你的组织内建立一种开源式的文化，来达成开源项目带给我们的最佳实践。你所开发的仍是自有软件，但是它将是组织内的开发者和团队之间的工作更加开放流畅。"
+Why InnerSource matters?,内源为何重要？
+"With the increasing pace of technological change, internal communication and collaboration have become key competitive differentiators, as they are both essential to agility and ensuring long-term competitive advantage.","随着技术变革步伐的不断加快，内部沟通和协作已成为竞争的关键因素，它们对敏捷性和竞争中的长期优势都至关重要。"
+"Adopting InnerSource within a organization enables reuse of existing solutions and minimizes redundancy, empowers and incentivizes collaboration across teams, and makes it possible to leverage the talent across the entire workforce.","在组织内部采用内源，可以在现有的解决方案的基础上，最大限度地减少冗余，增进和激励各团队之间的协作，并使团队内的人才得到充分利用。"
+Benefits of InnerSource,内源的好处
+Many benefits that are typical of open source development can be realized with InnerSource.,许多开源开发的好处都可以通过内源实现。
+"Faster, with quality:","开发速度更快，质量更高："
+"Unit tests, code coverage, and continuous integration help improve code earlier","单元测试、代码覆盖和持续集成有助于更高效地改进代码。"
+"Documentation:","代码记录："
+"Code is better documented, both in comments and less formally in discussions","代码无论是在注释中，还是在讨论中，都可以更好、更轻松地被记录"
+"Code reuse:","代码重现："
+"Code and architecture are discoverable and available across teams and the organization","代码和架构是可以被识别的，并且可以在团队和组织中都可以轻松获取。"
+"Collaboration:","协作："
+"Friction reduced for code review, communication, and contributions in and between teams","减少团队内部和团队之间代码审查、交流和贡献的阻力。"
+"Culture:","文化："
+"Silos broken down, happiness improved and with that, better retainment and recruitment","打破壁垒，提高幸福感，留用和招聘的可能也随之提升。"
+Which of the following options is NOT TRUE about InnerSource?,
+InnerSource refers to the adoption of open source best practices within an organization,内源指的是在组织内推行开源模式的最佳实践
+InnerSource requires adopting the open source culture in terms of sharing code and collaborating with your colleagues potentially outside your depratment,内源所推行的开源文化要求个体分享代码并与部门外同事进行协作
+Making your source code visible within the organization is enough for InnerSource,让你的源代码在组织内公开可见对于内源来说已经足够了
+InnerSource can lead to sustainable collaboration and is beneficial in ensuring the long-term success of the organization,"内源可以促进可持续的协作，并且有利于确保组织的长期发展"
