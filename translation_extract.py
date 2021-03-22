@@ -6,7 +6,7 @@ Output: A text file - translation_text.txt - with text inside the i18n$t() funct
 import re, sys
 
 def returnMatch(text):
-  return re.findall(r'i18n\$t\((.*?)\)', text)
+  return re.findall(r'i18n\$t\((".*?")\)', text)
 
 if __name__ == '__main__':
   try:

@@ -17,11 +17,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## `r i18n$t("InnerSource FAQ")`
 
-`r i18n$t("Here we try to address a number of frequently asked questions about InnerSource. Most of the content is courtesy of the InnerSource Commons Learning Path community:")`https://innersourcecommons.org/learn/learning-path/
+`r i18n$t("Here we try to address a number of frequently asked questions about InnerSource. Most of the content is courtesy of the InnerSource Commons community:")` <https://innersourcecommons.org/>
 
 ## `r i18n$t("What is InnerSource?")`
 
 `r i18n$t("InnerSource is the use of best practices from successful open source projects and establishment of an open source culture within your organization. You still develop proprietary software, while opening up work between developers and teams internally.")`
+
+`r i18n$t("For a detailed description of InnerSource principles, please check out")`  <https://innersourcecommons.org/getting-started/>
 
 ### `r i18n$t("Watch Danese Cooper and Russell Rutledge introducing InnerSource")`
 
@@ -60,14 +62,42 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * `r i18n$t("Trusted Committer - A developer outside of the product owners who has contributed to that specific product frequently and is knowledgeable about the codebase in general. They are trusted to keep the software and the community that is developing it healthy.")`
 
+## `r i18n$t("What is InnerSource Commons?")`
 
+`r i18n$t("The InnerSource Commons is a growing community of practitioners with the goal of creating and sharing knowledge about InnerSource: the use of open source best practices for software development within the confines of an organization. Founded in 2015, the InnerSource Commons is now supporting and connecting over 900 individuals from over 350 companies, academic institutions, and government agencies. You can find out more about this thriving community at")` <https://innersourcecommons.org/>
+
+## `r i18n$t("What are InnerSource Patterns?")`
+
+`r i18n$t("A Pattern refers to the InnerSource best practices codified in a specific format to make it easy to understand, evaluate, and apply them in your context.")`
+
+`r i18n$t("These best practices are collected over the years but members of the InnerSource Commons community and it is likely that by looking at these patterns you will find the ideas about how to kick-start or scale your InnerSource practice.")`
+
+`r i18n$t("The most mature (mature in this context means that each pattern has been reviewed by members of the community, and has at least one known instance where this pattern has been used) patterns have been published in the book:")` <https://patterns.innersourcecommons.org/>
+
+`r i18n$t("The patterns are continually updated and new patterns are regularly added to the GitHub repository for InnerSource patterns:")` <https://github.com/InnerSourceCommons/InnerSourcePatterns>
+
+## `r i18n$t("What is InnerSource Learning Path?")`
+
+`r i18n$t("The InnerSource Learning Path is a series of short training segments, each explaining one particular aspect of InnerSource. Each segment is composed of a video and corresponding written article, both of which contain the same information. Presenting that information in both written and spoken form allows people to learn in the way that is best for them. You can find the Learning Path resources at:")` <https://innersourcecommons.org/zh/learn/learning-path/>
+
+## `r i18n$t("I have some concerns about InnerSource")`
+
+`r i18n$t("If you have some concerns regarding InnerSource or are not sure if it will be right for you/your projects, we encourage you to please take the InnerSource Obstacles Survey, which also lists various resource for addressing the most commonly faced problems. It also helps us understand what type of concerns you have so that we can address them. You can find the Survey at:")` <https://tapjdey.shinyapps.io/HSurvey_2020/>
+
+## `r i18n$t("How do I find an InnerSource project?")`
+
+## `r i18n$t("Is my project appropriate for InnerSource?")`
+
+`r i18n$t("You can check the suitability of your project by checking the [good-first-project](https://github.com/InnerSourceCommons/InnerSourcePatterns/blob/master/patterns/1-initial/good-first-project.md) pattern, and the [cross-team project valuation](https://github.com/InnerSourceCommons/InnerSourcePatterns/blob/master/patterns/2-structured/crossteam-project-valuation.md') pattern gives insights on measuring a project's value across different teams. You can self-evaluate the maturity of the project according to InnerSource standards using the [InnerSource Maturity Model](https://github.com/InnerSourceCommons/InnerSourcePatterns/blob/master/patterns/2-structured/maturity-model.md)")`.
+
+<!-- InnerSource Quiz Content -->
 
 ## `r i18n$t("InnerSource Quiz")`
 
 `r i18n$t("You can attempt the following questions to test your understanding about InnerSource")`
 
 ```{r basic, echo=FALSE}
-quiz(caption = i18n$t("InnerSource Knowledge Quiz"),
+quiz(caption = i18n$t("InnerSource Basics"),
 question(i18n$t("Which of the following options is NOT TRUE about InnerSource?"),
   answer(i18n$t("InnerSource refers to the adoption of open source best practices within an organization")),
   answer(i18n$t("InnerSource requires adopting the open source culture in terms of sharing code and collaborating with your colleagues potentially outside your depratment")),
@@ -75,17 +105,29 @@ question(i18n$t("Which of the following options is NOT TRUE about InnerSource?")
   answer(i18n$t("InnerSource can lead to sustainable collaboration and is beneficial in ensuring the long-term success of the organization")),
   random_answer_order = TRUE,
   allow_retry = TRUE
-),
+)
 
+)
+```
+
+```{r tc, echo=FALSE}
+quiz(caption=i18n$t("Trusted Committer"),
 question(i18n$t(" What sentence best describes the motivation for the name 'Trusted Committer?'"),
   answer(i18n$t("They are the only ones that are trusted to make commits to the project."), message = i18n$t("A good InnerSource project has a community of people submitting commits to the project. The trusted nature of the trusted committer goes beyond just raw coding activity.")),
   answer(i18n$t("It is the role name used by Apache and GitHub."), message = i18n$t("Apache and GitHub have different names for roles that encompass some of the responsibilities of the trusted committer, but not the full set. The role name of 'trusted committer' is intentionally unique to InnerSource.")),
   answer(i18n$t("They are trusted to keep the software and the community that is developing it healthy."), correct = TRUE, message = i18n$t("The role of the trusted committer is broad and encompasses subtle human interactions. After being chosen for their technical and interpersonal skills, the trusted committers employ a wide range of practices to elicit contributions, build the confidence and skills of the contributors, and ensure positive interactions throughout the community. There are no specifications for such work. It involves trust by the community and product owners.")),
   random_answer_order = TRUE,
   allow_retry = TRUE
+),
+question(i18n$t("Which of the following is a responsibility of a trusted committer? (Select all that apply)"),
+  answer(i18n$t("Ensuring that a contribution reflects end-user needs"), message = i18n$t("A contributor usually decides to join a project in order to ensure that the code meets a perceived end-user need. Thus, it is the contributors (or their managers) who are responsible for determining end-user needs, and the trusted committer assumes that any contribution is done for a good reason.")),
+  answer(i18n$t("Ensuring high code quality in their own submissions and those of other contributors"), correct = TRUE),
+  answer(i18n$t("Defending and documenting the community’s coding and participation standards."), correct = TRUE, message = i18n$t("Whatever benefits InnerSource offers to contributors and their community, it ultimately must produce top-quality applications in order to be viable. Code will be buggy and hard to maintain if contributors fail to follow standards in style and quality. The trusted committer ensures that they do. Also, potential contributors have the right to view explicit standards before they try to submit contributions. Documentation is key, and trusted committers should either write the documentation or recruit other knowledgeable people to do so.")),
+  random_answer_order = TRUE,
+  allow_retry = TRUE
 )
 )
-```
 
+```
 
 
