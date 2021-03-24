@@ -6,7 +6,7 @@ Creating a master document for various InnerSource FAQs that can easily be trans
 
 ## **Progress**
 
-The `InnerSourceFAQ/InnerSourceFAQ.Rmd` file is  the master document. All text requiring translation are enclosed inside the `i18n$t()` R function.
+The `InnerSourceFAQ/InnerSourceFAQ.Rmd` file is  the master document. All text that should appear in the HTML document (and require translation) are enclosed inside the `i18n$t()` R function.
 
 The translation language can be set in the beginning of the text: `i18n$set_translation_language("<language>")`. The translation file should be in the `./data/translation_<language>.csv` file relative to the `.Rmd` file.
 
