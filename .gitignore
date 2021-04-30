@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 InnerSourceFAQ/rsconnect/
+env/
+.DS_Store
+rsconnect
